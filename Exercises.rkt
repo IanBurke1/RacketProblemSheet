@@ -25,3 +25,11 @@
 (discount  29.50 50)
 
 ; Q.3 Define a function grcomdiv that takes two integers and returns their greatest common divisor.
+(define (grcomdiv a b)
+  (if (= b 0)
+      a
+      (grcomdiv b (modulo a b))))
+(grcomdiv 10 15)
+(grcomdiv 64 30)
+
+; Q.4 Write a function called appearances that returns the number of times its first argument appears as a member of its second argument
