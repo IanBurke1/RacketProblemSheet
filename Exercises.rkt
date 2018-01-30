@@ -33,3 +33,48 @@
 (grcomdiv 64 30)
 
 ; Q.4 Write a function called appearances that returns the number of times its first argument appears as a member of its second argument
+(define (appearances x y)
+  (if (null? y)
+      0
+      (if (= x(car y))
+          (+ 1(appearances x(cdr y)))
+          (appearances x(cdr y)))))
+(define l(list 1 2 2 2 5))
+(appearances 2 l)
+; expected answer = 3
+
+; Q.5 Write a procedure inter that takes two lists as arguments. It should return a list containing every element that appears in both lists, exactly once.
+(define (inter a b)
+  (if (null? a)
+      '()
+      (if (member(car a) b)
+          (cons (car a)(inter (cdr a) b))
+          (inter (cdr a) b))))
+(define list1 (list 1 2 3 4 5 6 7))
+(define list2 (list 2 4 6 8 10 12 14))
+(inter list1 list2)
+
+; Q.6 Write a procedure noatoms that takes a list and returns the number of atoms it contains.
+(define (noatoms x)
+  (if (null? x)
+      0
+      (+ 1(noatoms(cdr x)))))
+(define alist (list 1 3 5 7 11 13))
+(noatoms alist)
+
+; Q.7 Here is a Racket procedure that never finishes its job when n is not 0:
+(define (forever n)
+  (if (= n 0)
+      1
+      (+ 1 (forever n))))
+; Explain why it doesn’t give any result?
+
+; Q.8 Write a function called range that takes an integer n and returns a list containing the atoms 1, 2, 3, . . . , n
+(define (range n)
+  (if (= n 0)
+      '()
+      (cons n(range (- n 1)))))
+(range 10)
+; Q.9
+
+; Q.10
