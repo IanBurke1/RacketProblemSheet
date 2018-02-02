@@ -100,12 +100,37 @@
 
 ; Q.10 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Write a procedure to find the sum of all the multiples of 3 or 5 below 1000
 (display "Question 10: \n")
-(define (multiples-of? x y)
-  (if (= x 0)
-      0
-      (+ (filter (multiple-of? x y) (range 0 1000)))))
+;(define (multiples-of? x y)
+ ; (if (= x 0)
+ ;     0
+   ;   (+ (filter (multiple-of? x y) (range 0 1000)))))
 
-(multiples-of 3 5)
+;(multiples-of 3 5)
+
+; Q.11
+(display "Question 11: \n")
+; Q.12
+(display "Question 12: \n")
+; Q.13
+(display "Question 13: \n")
+(define (to-binary n)
+  (if (= n 0)
+      null
+      (cons (modulo n 2)(to-binary(/ (- n (modulo n 2))2)))))
+
+(to-binary 19)
+(to-binary 9)
+  
+
+; Q.14 Writeafunction select thattakestwoelements, alistandapositioninthelist, and return the element of the list in that position.
+(display "Question 14: \n")
+(define (select l i)
+  (if (= i 0)
+      (car l)
+      (select (cdr l)(- i 1))))
+(select (list 1 2 3 4 5)1)
+(select (list 1 2 3 4 5)4)
+
       
       
       
