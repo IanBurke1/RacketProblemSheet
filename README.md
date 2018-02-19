@@ -2,7 +2,7 @@
 #### *Theory of Algorithms - Lecturer: [Dr Ian McLoughlin](ianmcloughlin.github.io) - 4th Year (Hons) Software Development*
 This repository contains solutions to a number of exercises for [Theory of Algorithms](https://ianmcloughlin.github.io/theoryofalgorithms) 4th year module. The solutions will be written in the [Racket](https://racket-lang.org/) Language.
 
-The problem sheet can be found above at [RacketProblemSheet.pdf](https://github.com/ianburkeixiv/RacketProblemSheet/blob/master/RacketProblemSheet.pdf) and the solutions: [Exercises.rkt](https://github.com/ianburkeixiv/RacketProblemSheet/blob/master/Exercises.rkt)
+**_The problem sheet can be found above at [RacketProblemSheet.pdf](https://github.com/ianburkeixiv/RacketProblemSheet/blob/master/RacketProblemSheet.pdf) and the solutions: [Exercises.rkt](https://github.com/ianburkeixiv/RacketProblemSheet/blob/master/Exercises.rkt)_**
 
 
 ## Racket
